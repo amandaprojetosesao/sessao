@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { IonInfiniteScroll } from '@ionic/angular';
+import { Autorizacoes } from './autorizacoes';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.page.html',
   styleUrls: ['./lista.page.scss'],
 })
 export class ListaPage implements OnInit {
-  items = []
+  autorizacoesNome = []
 
   loadData(event) {
     setTimeout(() => {
